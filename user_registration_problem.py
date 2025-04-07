@@ -32,6 +32,11 @@ def validate_mobile_number(mobile_number):
     return bool(re.fullmatch(pattern, mobile_number))
 
 
+def validate_password(password):
+
+    #usecase-5
+    if len(password)<8:
+        return False
 
 
 
@@ -50,6 +55,9 @@ validate_email_id(mail_id)
 
 mobile_number = input("Enter your mobile number: ")
 validate_mobile_number(mobile_number)
+
+password = input("Enter your password :")
+validate_password(password)
 
 
 
