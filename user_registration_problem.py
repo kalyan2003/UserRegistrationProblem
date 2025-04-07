@@ -18,4 +18,3 @@ last_name = input("Enter your last name :")
 
 validate_first_and_last_name(last_name)
 
-
