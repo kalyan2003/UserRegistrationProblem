@@ -58,20 +58,31 @@ def validate_password(password):
 
     return True
 
-First_Name = input("Enter your first name :")
-validate_first_and_last_name(First_Name)
 
-last_name = input("Enter your last name :")
-validate_first_and_last_name(last_name)
+def validate_email_samples(email):
+    pattern = r"^[a-zA-Z0-9]+([._+-]?[a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z]{2,}){1,2}$"
+    return re.match(pattern, email) is not None
 
-mail_id = input("Enter your mail id: ")
-validate_email_id(mail_id)
+if __name__ == '__main__':
 
-mobile_number = input("Enter your mobile number: ")
-validate_mobile_number(mobile_number)
+    First_Name = input("Enter your first name :")
+    print(validate_first_and_last_name(First_Name))
 
-password = input("Enter your password :")
-validate_password(password)
+    last_name = input("Enter your last name :")
+    print(validate_first_and_last_name(last_name))
+
+    mail_id = input("Enter your mail id: ")
+    print(validate_email_id(mail_id))
+
+    mobile_number = input("Enter your mobile number: ")
+    print(validate_mobile_number(mobile_number))
+
+    password = input("Enter your password :")
+    print(validate_password(password))
+
+    email_sample = input("Enter the email sample : ")
+    print(validate_email_samples(email_sample))
+
 
 
 
