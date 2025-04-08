@@ -34,6 +34,12 @@ def validate_mobile_number(mobile_number):
 
 def validate_password(password):
 
+    """
+    Function validates the given password and checks whether the password is following the rules
+    :param password:
+    :return: bool value based on the condition matches
+    """
+
     #usecase-5
     if len(password)<8:
         return False
