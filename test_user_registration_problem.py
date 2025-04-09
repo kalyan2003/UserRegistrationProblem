@@ -9,8 +9,7 @@ from user_registration_problem import (
 )
 
 # Setup logger to log only errors
-logger.add("test_validation_errors.log", rotation="1 MB", retention="10 days", level="ERROR")
-
+logger.add("logs/test_validation_{time:YYYY-MM-DD}.log", rotation="00:00", retention="10 days", level="ERROR")
 # Load test data from JSON file
 def load_test_data():
     with open('test_data.json', 'r') as f:
