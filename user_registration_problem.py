@@ -10,20 +10,6 @@ def validate_first_and_last_name(First_Name):
     return bool(re.fullmatch(pattern, First_Name))
 
 
-<<<<<<< HEAD
-def validate_email_id(mail):
-    """
-    Function to check the given mail id is correct or false
-    :param mail:
-    :return: bool value based on the condition matches
-    """
-    pattern = r"^[a-z]+(\.[a-z0-9]+)?@[a-z]+\.[a-z]{2,3}(\.[a-z]{2})?$"
-
-    return bool(re.fullmatch(pattern, mail))
-
-
-=======
->>>>>>> 1b6bcb3 (Implemented the test file for user registration problem)
 def validate_mobile_number(mobile_number):
     """
     Validate the given mobile number is valid or not
@@ -74,12 +60,6 @@ if __name__ == '__main__':
     last_name = input("Enter your last name :")
     print(validate_first_and_last_name(last_name))
 
-<<<<<<< HEAD
-    mail_id = input("Enter your mail id: ")
-    print(validate_email_id(mail_id))
-
-=======
->>>>>>> 1b6bcb3 (Implemented the test file for user registration problem)
     mobile_number = input("Enter your mobile number: ")
     print(validate_mobile_number(mobile_number))
 
